@@ -10,4 +10,6 @@ public interface StoryService {
     public Story createStory(Story story, User user);
 
     public List<Story> findStoryByUserId(Integer userId);
+
+    List<Story> findAllStories(); // ✅ Add this
 }

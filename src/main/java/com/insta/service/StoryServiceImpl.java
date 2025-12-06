@@ -38,4 +38,11 @@ public class StoryServiceImpl implements StoryService{
         User user = userService.findUserById(userId);
         return storyRepo.findByUserId(userId);
     }
+
+
+    // ✅ ADD THIS METHOD
+    @Override
+    public List<Story> findAllStories() {
+        return storyRepo.findAll();
+    }
 }

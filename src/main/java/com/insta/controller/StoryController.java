@@ -30,4 +30,10 @@ public class StoryController {
         return storyService.findStoryByUserId(userId);
     }
 
+    // ✅ ADD THIS METHOD to get all stories
+    @GetMapping("/all-stories")
+    public List<Story> getAllStories(){
+        return storyService.findAllStories();
+    }
+
 }

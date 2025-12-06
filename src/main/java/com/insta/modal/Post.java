@@ -19,8 +19,10 @@ public class Post {
 
     private String caption;
 
+    @Column(length = 1000)
     private String image;
 
+    @Column(length = 1000)
     private String video;
 
     @ManyToOne
